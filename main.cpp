@@ -36,9 +36,9 @@ int main()
     char bestBooks[3];
     char **book = getBestBook(bestBooks);
     printf("Output: ");
-    printf("%s len: (%lu) / mem: (%lu)\n", *book, strlen(*book), sizeof(*book));
+    printf("%s / len: (%lu) / mem: (%lu)\n", *book, strlen(*book), sizeof(*book));
 
     char **book2 = getBestBook2();
     printf("Output: ");
-    printf("%s len: (%lu) / mem: (%lu)\n", book2[0], strlen(book2[0]), sizeof(book2[0]));
+    printf("%s / len: (%lu) / mem: (%lu)\n", book2[0], strlen(book2[0]), sizeof(book2[0]));
 };
